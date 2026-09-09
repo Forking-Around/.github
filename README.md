@@ -24,8 +24,6 @@ If it solves a real developer pain point, explores an emerging protocol, or auto
 | Project | Description | Stack | Status |
 | :--- | :--- | :--- | :--- |
 | **[`Overload`](https://github.com/Forking-Around/overload)** | Free, open-source load testing tool for Postman collections. Run via browser UI, CLI, or MCP server. | Python / CLI / MCP | `Active` |
-| **`[project-name]`** | *Placeholder: Describe an open protocol or API wrapper.* | TypeScript / Go | `Experimental` |
-| **`[project-name]`** | *Placeholder: Describe an agentic prototype or automation sandbox.* | Node.js | `Ideation` |
 
 ---
 
