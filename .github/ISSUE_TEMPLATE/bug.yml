@@ -1,0 +1,63 @@
+name: 🐛 Bug Report
+description: File a bug report to help us improve.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out as much detail as you can.
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What Happened
+      description: A clear and concise description of what the bug is.
+      placeholder: "Describe what actually occurred..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: "Describe what should have happened..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Execute command '...'
+        3. See error '...'
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Provide relevant details about your setup.
+      placeholder: |
+        - OS: [e.g., macOS Sonoma 14.5, Ubuntu 22.04]
+        - Language / Runtime: [e.g., Node.js v20.11.0, Python 3.12, Rust 1.78]
+        - Package / CLI Version: [e.g., v1.2.0]
+    validations:
+      required: true
+  - type: textarea
+    id: logs_screenshots
+    attributes:
+      label: Logs / Screenshots
+      description: Copy-paste terminal output, stack traces, or attach screenshots if applicable.
+      placeholder: "Paste logs or console output here..."
+    validations:
+      required: false
+  - type: textarea
+    id: possible_fix
+    attributes:
+      label: Possible Fix
+      description: Got a hypothesis or fix in mind? (Optional)
+      placeholder: "Describe a potential fix or line numbers if you've investigated..."
+    validations:
+      required: false

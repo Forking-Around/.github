@@ -1,0 +1,68 @@
+name: 💡 Project or Feature Idea
+description: Propose a new project, experiment, developer tool, or feature idea.
+title: "[Idea]: "
+labels: ["idea", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing an idea for Forking-Around! Please provide as much context as possible.
+  - type: input
+    id: idea_title
+    attributes:
+      label: Idea Title
+      description: A short, descriptive name for your proposal.
+      placeholder: "e.g., Agentic CLI tool for automatic git commit summaries"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem or pain point does this idea address?
+      placeholder: "Describe the current friction, inefficiency, or missing capability..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: What should we build? Describe the concept and key features.
+      placeholder: "High-level description of the proposed tool, library, or experiment..."
+    validations:
+      required: true
+  - type: textarea
+    id: why_it_matters
+    attributes:
+      label: Why It Matters
+      description: Who will benefit from this project/feature and what is its potential impact?
+      placeholder: "Impact on developer experience, productivity, or open-source ecosystem..."
+    validations:
+      required: true
+  - type: textarea
+    id: technical_approach
+    attributes:
+      label: Possible Technical Approach
+      description: Any initial thoughts on architecture, language, libraries, or protocols?
+      placeholder: "e.g., Rust CLI using clap + reqwest, Python library with async interface, etc."
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you looked at existing tools or alternative approaches?
+      placeholder: "Existing solutions and why a new approach is worth exploring..."
+    validations:
+      required: false
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you like to contribute?
+      description: Let us know if you're interested in building or co-maintaining this.
+      options:
+        - "Yes, I would like to implement this myself"
+        - "Yes, I can help design or review implementation"
+        - "I'm just pitching the idea for the community to pick up"
+    validations:
+      required: true
